@@ -559,18 +559,6 @@ video {
   position: absolute;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
 .bottom-8 {
   bottom: 2rem;
 }
@@ -619,10 +607,6 @@ video {
   border-radius: 9999px;
 }
 
-.bg-def_bg {
-  background-color: #060023f4;
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -632,9 +616,22 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+body {
+  background: linear-gradient(90deg, #ff0077d6 50%, #00bbffb6 50%);
 }
 
 .w-84 {
@@ -647,9 +644,9 @@ video {
 
 .clk-bg {
   background-image: url("../img/clock.png");
-  border: 4px solid #060023f4;
-  box-shadow: 0 -15px 15px #ffffff0d, inset 0 -15px 15px #ffffff0d,
-    0 15px 15px #000000, inset 0 15px 15px #000000;
+  filter: saturate(75%);
+  background-color: #f4f1f17e;
+  border: 4px solid #fff;
 }
 
 .clk-bg::before {
@@ -659,7 +656,7 @@ video {
   background: #000;
   position: absolute;
   z-index: 100000000;
-  border-radius: 200%;
+  border-radius: 100%;
 }
 
 #minute,
@@ -703,7 +700,5 @@ video {
 }
 
 #hour {
-  border: 2px solid #060023f4;
-  box-shadow: 0 -10px 10px #ffffff0d, inset 0 -10px 10px #ffffff0d,
-    0 10px 10px #000000, inset 0 10px 10px #000000;
+  border: 2px solid #f4f1f17e;
 }
