@@ -559,10 +559,6 @@ video {
   position: absolute;
 }
 
-.bottom-8 {
-  bottom: 2rem;
-}
-
 .top-8 {
   top: 2rem;
 }
@@ -622,11 +618,6 @@ video {
 
 .font-bold {
   font-weight: 700;
-}
-
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -697,7 +688,7 @@ body {
   content: " ";
   position: absolute;
   width: 12px;
-  height: 65px;
+  height: 70px;
   background-color: #ccc;
   z-index: 12;
   border-radius: 6px 6px 0 0;
