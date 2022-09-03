@@ -41,6 +41,11 @@ body {
     text-align: center;
   }
 }
+@media (max-height: 598px) {
+  .round {
+    display: none;
+  }
+}
 .clock-face {
   width: 100%;
   height: 100%;
