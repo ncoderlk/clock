@@ -5,26 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Javascript Clock</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>CLOCK</title>
 </head>
 
-<body>
-
-  <div class="clock-container">
-    <div class="clock-face">
-      <span><span title="casio">Casio</span>
-        <h6>&copysr;</h6>
-      </span>
-      <div class="clock-hands" id="hour-h" title="Hour-Hand"></div>
-      <div class=" clock-hands" id="minute-h" title="Minute-Hand"></div>
-      <div class="clock-hands " id="sec-h" title="Second-Hand"></div>
-      <div class=" round" title="Center-Ball"></div>
+<body class="min-h-screen flex justify-center items-center bg-def_bg">
+  <div class="w-84 h-84 flex justify-center items-center clk-bg bg-cover rounded-full">
+    <div class="absolute w-40 h-40">
+      <div id="hour" class="w-40 h-40 flex justify-center absolute"></div>
+    </div>
+    <div class="absolute w-48 h-48">
+      <div id="minute" class="w-48 h-48 flex justify-center  absolute "></div>
+    </div>
+    <div class="absolute w-56 h-56">
+      <div id="second" class="w-56 h-56 flex justify-center absolute"></div>
     </div>
   </div>
-  <span title="c">&copy; <span title="cpy"></span> All Rights Reserved By Ncoderlk</span>
-  <script src=" ./index.js">
-  </script>
+  <div class="fixed bottom-8 justify-center items-center text-white text-lg">
+    &copy;<span id="copy"></span> All rights reserved by <a href="https://github.com/ncoderlk">ncoderlk</a>
+  </div>
+  <script src="./js/index.js"></script>
+  <script src="./js/copy.js"></script>
+
+
 </body>
 
 </html>
