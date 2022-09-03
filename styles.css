@@ -29,8 +29,8 @@ body {
 }
 @media (max-width: 406px) {
   .clock-container {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin-top: 40%;
   }
   span[title="c"] {
